@@ -1,0 +1,60 @@
+/////////////////////////
+let n=gets().split(" ");
+let i;
+
+for(i = 1; i <= n; i ++){
+  if((i%2)==0){
+    console.log("\n" +i);
+  }
+
+}
+///////////////////////
+
+let total = 0;
+let i = 0;
+let valor;
+
+while (i<6){
+
+ valor = parseFloat(gets());
+
+ if (valor > 0)
+
+ {
+
+   total = total + 1;
+
+ }
+
+ i = i + 1;
+
+}
+
+console.log(total + " valores positivos");
+
+////////////////////////////////////////
+let i = 0;
+let n;
+let n_par=0, n_impar=0;
+let n_pos=0, n_neg=0;
+
+while(i<5){
+  n = parseInt(gets());
+    if((n%2)==0){
+      n_par=n_par+1;
+    }
+    if((n%2)!=0){
+      n_impar=n_impar+1;
+    }
+    if(n>0){
+      n_pos=n_pos+1;
+    }
+    if(n<0){
+      n_neg=n_neg+1;
+    }
+    i=i+1;
+  }
+  console.log(n_par + " valor(es) par(es)");
+  console.log(n_impar + " valor(es) impar(es)");
+  console.log( n_pos + " valor(es) positivo(s)");
+  console.log( n_neg + " valor(es) negativo(s)");
